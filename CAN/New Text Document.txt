@@ -1,0 +1,3 @@
+103 - tốc độ truyền 2000ms - chỉ chận dl từ node 104
+104 - tốc độ truyền 100ms  - chỉ chận dl từ node 446
+446 - tốc độ truyền 4000ms - chỉ chận dl từ node 103
