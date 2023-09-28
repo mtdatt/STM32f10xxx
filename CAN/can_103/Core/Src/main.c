@@ -69,7 +69,7 @@ void CanTx_Init(void){
 	TxHeader.TransmitGlobalTime = DISABLE;
 	HAL_CAN_Start(&hcan);
 }
-void CanRx_Init_MASK()
+void CanRx_Init_Mask()
 {
 	//=================can filter==============//
 	/* -------------------------------id 0X103 ----------------------------------*/
@@ -88,6 +88,45 @@ void CanRx_Init_MASK()
 	//==================kich hoat ngat can=====================//
 	HAL_CAN_ActivateNotification(&hcan,CAN_IT_RX_FIFO0_MSG_PENDING);
 }
+
+
+
+ 		void CanRx_Init_List()
+		{
+			//=================can filter==============//
+			/* -------------------------------id 0X103 ----------------------------------*/
+			sFilterConfig.FilterBank = 0;
+			sFilterConfig.FilterMode = CAN_FILTERMODE_IDLIST;
+			sFilterConfig.FilterScale = CAN_FILTERSCALE_16BIT;
+			sFilterConfig.FilterIdHigh = 0x104<<5;  // chỉ nhận dữ liệu từ node 0x104
+			sFilterConfig.FilterIdLow = 0;
+			sFilterConfig.FilterFIFOAssignment = CAN_RX_FIFO0;
+			sFilterConfig.FilterActivation = ENABLE;
+			HAL_CAN_ConfigFilter(&hcan, &sFilterConfig);
+			//==================cho phep can hoat dong=================//
+			HAL_CAN_Start(&hcan);
+			//==================kich hoat ngat can=====================//
+			HAL_CAN_ActivateNotification(&hcan,CAN_IT_RX_FIFO0_MSG_PENDING);
+		}
+
+ 		void CanRx_Init_List1()
+		{
+			//=================can filter==============//
+			/* -------------------------------id 0X103 ----------------------------------*/
+			sFilterConfig.FilterBank = 1;
+			sFilterConfig.FilterMode = CAN_FILTERMODE_IDLIST;
+			sFilterConfig.FilterScale = CAN_FILTERSCALE_16BIT;
+			sFilterConfig.FilterIdHigh = 0x446<<5;  // chỉ nhận dữ liệu từ node 0x446
+			sFilterConfig.FilterIdLow = 0;
+			sFilterConfig.FilterFIFOAssignment = CAN_RX_FIFO0;
+			sFilterConfig.FilterActivation = ENABLE;
+			HAL_CAN_ConfigFilter(&hcan, &sFilterConfig);
+			//==================cho phep can hoat dong=================//
+			HAL_CAN_Start(&hcan);
+			//==================kich hoat ngat can=====================//
+			HAL_CAN_ActivateNotification(&hcan,CAN_IT_RX_FIFO0_MSG_PENDING);
+		}
+
 
 /* USER CODE END PFP */
 
@@ -126,8 +165,25 @@ int main(void)
   MX_GPIO_Init();
   MX_CAN_Init();
   /* USER CODE BEGIN 2 */
-  CanTx_Init();
-  CanRx_Init();
+
+  	  	  CanTx_Init(); // khởi tạo can nhận
+
+  /*
+   * chế độ mask: cho phép nhận 1 khoảng các ID liên tiếp
+  */
+  	  	  //CanRx_Init_Mask();
+
+
+
+  /*
+   * Chế độ list chỉ cho phép nhận các ID có sẵn
+   * */
+		  CanRx_Init_List1();
+		  CanRx_Init_List();
+
+
+
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
