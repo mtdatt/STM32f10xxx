@@ -1,0 +1,10 @@
+14:06:01 **** Incremental Build of configuration Debug for project can_tx ****
+make -j4 all 
+arm-none-eabi-size   can_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8464	     20	   1684	  10168	   27b8	can_tx.elf
+Finished building: default.size.stdout
+ 
+
+14:06:02 Build Finished. 0 errors, 0 warnings. (took 357ms)
+

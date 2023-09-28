@@ -1,0 +1,7 @@
+../Core/Src/main.c:55:6:mode1	2
+../Core/Src/main.c:62:6:mode2	3
+../Core/Src/main.c:75:6:nhay_led_PC13	1
+../Core/Src/main.c:94:5:main	1
+../Core/Src/main.c:142:6:SystemClock_Config	3
+../Core/Src/main.c:182:13:MX_GPIO_Init	1
+../Core/Src/main.c:231:6:Error_Handler	1

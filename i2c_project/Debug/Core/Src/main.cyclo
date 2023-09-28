@@ -1,0 +1,9 @@
+../Core/Src/main.c:61:9:B_to_D	1
+../Core/Src/main.c:67:9:D_to_B	1
+../Core/Src/main.c:71:6:DS3231_getTime	1
+../Core/Src/main.c:85:6:DS3231_setTime	1
+../Core/Src/main.c:117:5:main	1
+../Core/Src/main.c:164:6:SystemClock_Config	3
+../Core/Src/main.c:204:13:MX_I2C1_Init	2
+../Core/Src/main.c:238:13:MX_GPIO_Init	1
+../Core/Src/main.c:260:6:Error_Handler	1

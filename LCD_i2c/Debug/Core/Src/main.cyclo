@@ -1,0 +1,15 @@
+../Core/Src/main.c:64:6:delay_us	2
+../Core/Src/main.c:70:6:delay_ms	2
+../Core/Src/main.c:76:6:DHT_SetPinOut	1
+../Core/Src/main.c:84:6:DHT_SetPinIn	1
+../Core/Src/main.c:93:6:DHT_WritePin	1
+../Core/Src/main.c:97:16:DHT_ReadPin	1
+../Core/Src/main.c:104:9:DHT_Start	2
+../Core/Src/main.c:129:9:DHT_Read	5
+../Core/Src/main.c:149:6:DHT_ReadTempHum	2
+../Core/Src/main.c:177:5:main	1
+../Core/Src/main.c:243:6:SystemClock_Config	3
+../Core/Src/main.c:283:13:MX_I2C1_Init	2
+../Core/Src/main.c:317:13:MX_TIM2_Init	4
+../Core/Src/main.c:362:13:MX_GPIO_Init	1
+../Core/Src/main.c:395:6:Error_Handler	1

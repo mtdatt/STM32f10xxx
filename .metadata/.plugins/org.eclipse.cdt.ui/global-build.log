@@ -1,0 +1,49 @@
+15:35:11 **** Incremental Build of configuration Debug for project can_103 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "can_103.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32_Project\can_103\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="can_103.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: can_103.elf
+ 
+arm-none-eabi-size   can_103.elf 
+arm-none-eabi-objdump -h -S  can_103.elf  > "can_103.list"
+   text	   data	    bss	    dec	    hex	filename
+   7864	     20	   1676	   9560	   2558	can_103.elf
+Finished building: default.size.stdout
+ 
+Finished building: can_103.list
+ 
+15:35:24 **** Incremental Build of configuration Debug for project can_103 ****
+make -j4 all 
+arm-none-eabi-size   can_103.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7864	     20	   1676	   9560	   2558	can_103.elf
+Finished building: default.size.stdout
+ 
+15:36:00 **** Incremental Build of configuration Debug for project can_446 ****
+make -j4 all 
+arm-none-eabi-size   can_446.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7928	     20	   1708	   9656	   25b8	can_446.elf
+Finished building: default.size.stdout
+ 
+15:38:37 **** Incremental Build of configuration Debug for project can_446 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "can_446.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32_Project\can_446\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="can_446.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: can_446.elf
+ 
+arm-none-eabi-size   can_446.elf 
+arm-none-eabi-objdump -h -S  can_446.elf  > "can_446.list"
+   text	   data	    bss	    dec	    hex	filename
+   7928	     20	   1708	   9656	   25b8	can_446.elf
+Finished building: default.size.stdout
+ 
+Finished building: can_446.list
+ 
+15:39:15 **** Incremental Build of configuration Debug for project can_446 ****
+make -j4 all 
+arm-none-eabi-size   can_446.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7928	     20	   1708	   9656	   25b8	can_446.elf
+Finished building: default.size.stdout
+ 
