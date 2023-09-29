@@ -79,7 +79,7 @@ void CanRx_Init()
 	sFilterConfig.FilterScale = CAN_FILTERSCALE_32BIT;
 	sFilterConfig.FilterIdHigh = 0x103<<5;   // chỉ nhận dữ liệu từ node 0x103
 	sFilterConfig.FilterIdLow = 0;
-	sFilterConfig.FilterMaskIdHigh = 0x7f8<<5;
+	sFilterConfig.FilterMaskIdHigh = 0x7ff<<5;
 	sFilterConfig.FilterMaskIdLow = 0;
 	sFilterConfig.FilterFIFOAssignment = CAN_RX_FIFO0;
 	sFilterConfig.FilterActivation = ENABLE;
