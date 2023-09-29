@@ -1,3 +1,5 @@
-103 - tốc độ truyền 2000ms - chỉ nhận dl từ node 104(chế độ mask) || chỉ nhận dl từ node 104, 446(chế độ List)
-104 - tốc độ truyền 100ms  - chỉ nhận dl từ node 446
-446 - tốc độ truyền 4000ms - chỉ nhận dl từ node 103
+0x103 - tốc độ truyền 2000ms - chỉ nhận dl từ node 0x104(chế độ mask). Mỗi bank lọc được nhiều ID
+                            || chỉ nhận dl từ node 0x104[Filter bank 0], 0x446[Filter bank 1](chế độ List). Mỗi bank chỉ lọc 1 ID
+
+0x104 - tốc độ truyền 100ms  - chỉ nhận dl từ node 0x446
+0x446 - tốc độ truyền 4000ms - chỉ nhận dl từ node 0x103
