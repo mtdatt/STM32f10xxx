@@ -1,0 +1,11 @@
+../Core/Src/main.c:63:6:CanTx_Init	1
+../Core/Src/main.c:72:6:CanRx_Init_Mask	1
+../Core/Src/main.c:94:9:CanRx_Init_List	1
+../Core/Src/main.c:112:9:CanRx_Init_List1	1
+../Core/Src/main.c:131:6:Send_Buffer	1
+../Core/Src/main.c:143:6:Send_CAN	12
+../Core/Src/main.c:221:5:main	1
+../Core/Src/main.c:271:6:SystemClock_Config	3
+../Core/Src/main.c:311:13:MX_CAN_Init	2
+../Core/Src/main.c:348:13:MX_GPIO_Init	1
+../Core/Src/main.c:389:6:Error_Handler	1
